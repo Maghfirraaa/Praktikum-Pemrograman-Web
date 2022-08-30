@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+    <style>
+        form {
+            border: 1px black;
+            display: inline-block;
+            font-size: 14px;
+            padding: 1em 2em;
+            background-color: #4DAA83;
+            align-items: center;
+            margin-left: 560px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="hasilformdata.php" method="post">
+        <fieldset>
+            <legend><b>Form Input Data</b></legend>
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td><input type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td><input type="text" name="alamat"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td><input type="radio" name="JK" value="Cowok">Cowok
+                        <input type="radio" name="JK" value="Cewek">Cewek</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Hitung</td>
+                    <td>1+8</td>
+                </tr>
+                <tr>
+                    <td>Jawab</td>
+                    <td><input type="text" name="jawab"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Simpan">
+                        <input type="reset" value="Batal">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

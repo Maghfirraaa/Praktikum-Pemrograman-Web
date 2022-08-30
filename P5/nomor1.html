@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Nilai Angka Menjadi Nilai Huruf</title>
+    <!-- Menghubungkan ke file css atau eksernal css -->
+    <link rel="stylesheet" href="Style1.css">
+    <!-- internal Javascript -->
+    <script language="Javascript">
+        //Metode alert () digunakan untuk menampilkan dengan pesan khusus 
+        //dan peringatan tombol kotak konfirmasi.
+        window.alert("Lanjut untuk konversi nilai ke nilai huruf?");
+
+        function konversi() {
+            var val1 = document.kirim.T1.value
+            if ((val1 >= 0) && (val1 <= 40))
+                document.kirim.T2.value = "E"
+            else if ((val1 >= 41) && (val1 <= 55))
+                document.kirim.T2.value = "D"
+            else if ((val1 >= 56) && (val1 <= 60))
+                document.kirim.T2.value = "C"
+            else if ((val1 >= 61) && (val1 <= 65))
+                document.kirim.T2.value = "BC"
+            else if ((val1 >= 66) && (val1 <= 70))
+                document.kirim.T2.value = "B"
+            else if ((val1 >= 71) && (val1 <= 80))
+                document.kirim.T2.value = "AB"
+            else if ((val1 >= 81) && (val1 <= 100))
+                document.kirim.T2.value = "A"
+            else
+                document.kirim.T2.value = "Tidak ada nilai hurufnya"
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="title">Ubah nilai angka ke nilai huruf</h1>
+    <p class="awal">Silahkan memasukkan nilai angka yang ingin anda konversi ke nilai huruf!</p>
+    <div class="Form">
+        <form method="post" name="kirim">
+            <fieldset>
+                <legend>Konversi Nilai Angka Menjadi Nilai Huruf</legend>
+                <p> Nilai Angka : <input type="text" name="T1" size="20"> Nilai Huruf : <input type="text" name="T2" size="20"></p>
+                <p class="button"><input type="button" value="Konversi Nilai" name="B1" onclick="konversi()"></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

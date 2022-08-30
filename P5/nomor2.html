@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style2.css">
+
+    <script language="Javascript">
+        window.alert("Lanjutkan untuk menggunakan kalkulator ini");
+
+        function tambah() {
+            var angka1 = parseFloat(document.calculator.angka1.value);
+            var angka2 = parseFloat(document.calculator.angka2.value);
+            var hasil = angka1 + angka2;
+            document.calculator.hasil.value = hasil;
+        }
+
+        function kurang() {
+            var angka1 = parseFloat(document.calculator.angka1.value);
+            var angka2 = parseFloat(document.calculator.angka2.value);
+            var hasil = angka1 - angka2;
+            document.calculator.hasil.value = hasil;
+        }
+
+        function kali() {
+            var angka1 = parseFloat(document.calculator.angka1.value);
+            var angka2 = parseFloat(document.calculator.angka2.value);
+            var hasil = angka1 * angka2;
+            document.calculator.hasil.value = hasil;
+        }
+
+        function bagi() {
+            var angka1 = parseFloat(document.calculator.angka1.value);
+            var angka2 = parseFloat(document.calculator.angka2.value);
+            var hasil = angka1 / angka2;
+            document.calculator.hasil.value = hasil;
+        }
+
+        function Modulus() {
+            var angka1 = parseFloat(document.calculator.angka1.value);
+            var angka2 = parseFloat(document.calculator.angka2.value);
+            var hasil = angka1 % angka2;
+            document.calculator.hasil.value = hasil;
+        }
+    </script>
+</head>
+
+<body>
+
+    <form name="calculator">
+        <table class="tabel" align="center">
+            <caption>Calculator</caption>
+            <tr>
+                <td>Angka 1</td>
+                <td>:</td>
+                <td><input type="text" name="angka1"></td>
+            </tr>
+            <tr>
+                <td>Angka 2</td>
+                <td>:</td>
+                <td><input type="text" name="angka2"></td>
+            </tr>
+            <tr>
+                <td>Hasil</td>
+                <td>:</td>
+                <td><input type="text" name="hasil"></td>
+            </tr>
+            <div class="button">
+                <tr>
+                    <td colspan="3" align="center">
+                        <input class="tombol" type="button" onclick="tambah()" value="  +  ">
+                        <input class="tombol" type="button" onclick="kurang()" value="  -  ">
+                        <input class="tombol" type="button" onclick="kali()" value="  *  ">
+                        <input class="tombol" type="button" onclick="bagi()" value="  /  ">
+                        <input class="tombol" type="button" onclick="Modulus()" value="  % ">
+                    </td>
+                </tr>
+            </div>
+            <div class="reset">
+                <tr>
+                    <td rowspan="3">
+                        <input class="tombol2" type="reset" value="Reset" align="center" />
+                    </td>
+                </tr>
+            </div>
+
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Hitung</title>
+    <style>
+        form {
+            border: 1px black;
+            display: inline-block;
+            font-size: 14px;
+            padding: 1em 2em;
+            background-color: #e6bfbf;
+            align-items: center;
+            margin-left: 455px;
+        }
+        
+        .hasil {
+            margin-top: 40px;
+            margin-left: 455px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Form Hitung</legend>
+            <table>
+                <tr>
+                    <td>Value 1</td>
+                    <td><input type="text" name="value1" placeholder="Masukkan Value 1" required></td>
+                </tr>
+                <tr>
+                    <td>Value 2</td>
+                    <td><input type="text" name="value2" placeholder="Masukkan Value 2" required></td>
+                </tr>
+                <tr>
+                    <td>Operator</td>
+                    <td>
+                        <select name="operator">
+                            <option value="tambah">+</option>
+                            <option value="kurang">-</option>
+                            <option value="bagi">:</option>
+                            <option value="modulo">%</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Hasil">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

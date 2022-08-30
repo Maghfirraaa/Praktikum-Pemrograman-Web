@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi penghitung luas persegi panjang</title>
+    <!-- Internal Style sheets/ Internal CSS -->
+    <style>
+        .Form {
+            border: 1px solid;
+            display: inline-block;
+            font-size: 16px;
+            background-color: aqua;
+        }
+        
+        h1 {
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        p {
+            font-size: 14px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Perhitungan Luas Persegi Panjang</h1>
+    <p>Untuk memudahkan dalam perhitungan luas persegi panjang, gunakan aplikasi dibawah ini :
+        <p></p>
+        <div class="Form">
+            <form action="hasil.php" method="post">
+                <fieldset>
+                    <legend>Menghitung Luas Persegi Panjang</legend>
+                    <table>
+                        <tr>
+                            <td>Panjang</td>
+                            <td><input type="text" name="panjang"></td>
+                        </tr>
+                        <tr>
+                            <td>Lebar</td>
+                            <td><input type="text" name="lebar"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit" value="luas">Hitung</button>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+</body>
+
+</html>

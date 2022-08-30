@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+    <style>
+        .form {
+            display: inline-block;
+            font-size: 16px;
+            background-color: antiquewhite;
+        }
+        
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Biodata Diri</h1>
+    <div class="form">
+        <form action="hasilbiodata.php" method="post">
+            <fieldset>
+                <legend>Form Biodata</legend>
+                <table>
+                    <tr>
+                        <td>NIK</td>
+                        <td><input type="text" name="NIK"></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td><input type="text" name="nama"></td>
+                    </tr>
+                    <tr>
+                        <td>TTL</td>
+                        <td><input type="text" name="ttl" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <select name="JK">
+                        <option value="Laki-laki">Laki-Laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>
+                            <Textarea name="alamat" cols="22" rows="4"></Textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Agama</td>
+                        <td><input type="text" name="agama"></td>
+                    </tr>
+                    <tr>
+                        <td>Status Perkawinan</td>
+                        <td>
+                            <select name="SP">
+                        <option value="Kawin">Kawin</option>
+                        <option value="Belum Kawin">Belum Kawin</option>
+                    </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Golongan Darah</td>
+                        <td>
+                            <select name="goldar">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="AB">AB</option>
+                        <option value="O">O</option>
+                    </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pekerjaan</td>
+                        <td><input type="text" name="pekerjaan"></td>
+                    </tr>
+                    <tr>
+                        <td>Kewarganegaraan</td>
+                        <td>
+                            <select name="kwn">
+                            <option value="WNI">WNI</option>
+                            <option value="Asing">Asing</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="submit">
+                            <input type="reset" name="reset">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

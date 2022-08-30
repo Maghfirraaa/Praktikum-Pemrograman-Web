@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+</head>
+
+<body>
+    <form action="HasilKTP.php" method="post">
+        <table>
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>TTL</td>
+                <td><input type="text" name="ttl" id=""></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <select name="JK">
+                        <option value="Laki-laki">Laki-Laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>
+                    <Textarea name="alamat" cols="22" rows="4"></Textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Agama</td>
+                <td><input type="text" name="agama"></td>
+            </tr>
+            <tr>
+                <td>Status Perkawinan</td>
+                <td>
+                    <select name="SP">
+                        <option value="Kawin">Kawin</option>
+                        <option value="Belum Kawin">Belum Kawin</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Pekerjaan</td>
+                <td><input type="text" name="pekerjaan"></td>
+            </tr>
+            <tr>
+                <td>Kewarganegaraan</td>
+                <td>
+                    <select name="kwn">
+                        <option value="WNI">WNI</option>
+                        <option value="Asing">Asing</option>
+                    </select>
+                </td>
+                <tr>
+                    <td>Berlaku Hingga</td>
+                    <td><input type="radio" name="kadaluarsa" value="Seumur Hidup">Seumur Hidup</td>
+                </tr>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit">
+                    <input type="reset" name="reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
